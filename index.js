@@ -61,7 +61,7 @@ function includesNumber(array, number) {
     } else {
       let copyArray = array.slice()
       copyArray.shift()
-      includesNumber(copyArray)
+      return includesNumber(copyArray)
     }
   } else {
     return false
